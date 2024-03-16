@@ -1,0 +1,143 @@
+<!--
+  <ion-header [translucent]="false">
+   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="m1"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Menú semanal</ion-title>
+  </ion-toolbar>   
+</ion-header> 
+-->
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">ProductList</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <body>
+    <section id="logo">
+      <img src="" alt="logo a cuatro fuegos">
+    </section>
+    <!-- seccion titulo Menú y textos -->
+   <section id="textosUp">
+    <div class="content">
+      <h1>Menú</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis reiciendis?</p>    
+    </div>
+    
+   </section>
+
+    <!-- SECCION DE PRODUCTOSS -->
+    <section id="productos" class="">
+      <div class="content">
+        <div class="menu-semanal">
+          <ion-grid>
+            <!--lunes-->
+            <ion-row class="menu-individual">
+              <ion-col>
+                <div style="width: 150px">
+                  <p>Lunes</p>
+                </div>
+              </ion-col>
+              <!--icono-->
+              <ion-col size="auto">
+                <div class="flecha-derecha">
+                  <ion-icon color="primary" name="arrow-forward-circle-outline"></ion-icon>
+                </div>
+                <div class="flecha-abajo">
+                  <ion-icon name="arrow-down-circle-outline"></ion-icon>
+                </div>
+              </ion-col>
+
+            </ion-row>
+
+
+
+            <!-- grupo acordion -->
+            <!--       <ion-accordion-group>
+            <ion-accordion value="first" class="menu-individual">
+              <ion-item slot="header">
+                <ion-col>
+                  <div style="width: 150px">
+                    <p>Lunes</p>
+                  </div>
+                </ion-col>
+              </ion-item>
+            </ion-accordion>
+
+          </ion-accordion-group> -->
+
+
+            <!--martes-->
+            <ion-row class="menu-individual">
+              <ion-col>
+                <div style="width: 150px">
+                  <p>Martes</p>
+                </div>
+              </ion-col>
+              <ion-col size="auto">
+                <div style="width: 30px">
+                  <i class="fas fa-arrow-circle-right"></i>
+                </div>
+              </ion-col>
+            </ion-row>
+            <!--miércoles-->
+            <ion-row class="menu-individual">
+              <ion-col>
+                <div style="width: 150px">
+                  <p>Miércoles</p>
+                </div>
+              </ion-col>
+              <ion-col size="auto">
+                <div style="width: 30px">
+                  <i class="fas fa-arrow-circle-right"></i>
+                </div>
+              </ion-col>
+            </ion-row>
+            <!--jueves-->
+            <ion-row class="menu-individual">
+              <ion-col>
+                <div style="width: 150px">
+                  <p>Jueves</p>
+                </div>
+              </ion-col>
+              <ion-col size="auto">
+                <div style="width: 30px">
+                  <i class="fas fa-arrow-circle-right"></i>
+                </div>
+              </ion-col>
+            </ion-row>
+            <!--viernes-->
+            <ion-row class="menu-individual">
+              <ion-col>
+                <div style="width: 150px">
+                  <p>Viernes</p>
+                </div>
+              </ion-col>
+              <ion-col size="auto">
+                <div style="width: 30px">
+                  <i class="fas fa-arrow-circle-right"></i>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+        <ion-button id="open-toast" size="small" fill="outline" expand="block" shape="round" [routerLink]="['/main']"
+          color="danger">
+          <ion-icon name="cube-outline" name="start"></ion-icon>
+          Reservar
+        </ion-button>
+      </div>
+    </section>
+    <!-- dispara sección una vez guardado el pedido (JS)-->
+    <div class="pop-reserva">
+      <ion-toast trigger="open-toast" message="Tu reserva fue tomada" [duration]="2300"></ion-toast>
+    </div>    
+  </body>
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title> Footer </ion-title>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>
