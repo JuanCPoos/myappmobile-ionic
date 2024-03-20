@@ -26,7 +26,7 @@
 @import "@ionic/angular/css/flex-utils.css";
 
 $color-text-link: rgb(20, 87, 187);
-$color-backs: rgb(51, 49, 49);
+$color-backs: #2F2E2F;
 $arrow-btn-yellow: rgb(219, 191, 29);
 
 * {
@@ -40,9 +40,14 @@ body {
   margin: 0 auto;
 }
 ion-content,
-ion-header,
-ion-footer {
-  background-color: $color-backs;
+ion-header{  
+  --background: $color-backs;
+}
+ion-footer{
+  --ion-toolbar{
+    --background: #fff;
+  }
+  
 }
 section {
   width: 100%;
@@ -85,7 +90,7 @@ li {
 #textosUp {
   h1 {
     color: #fff;
-    padding: 0;
+    padding: 0em;
     margin: 0;
     font-size: 35px;
     width: auto;
@@ -118,13 +123,55 @@ li {
   }
 }
 
-.ion-padding{
+/** page main*/
+.contenido-main{
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-backs;
   .botones-main{
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 1em 0em;
+    .btn-portada{
+      color: $color-backs;
+      width: 150px;
+    }    
+  }
+  
+ ion-button{
+  margin: .7em .5em;
+  font-weight: 700;
+  --background: rgb(238, 237, 237);  
+  --background-activated: red;
+  //--color: #000;
+ } 
+  .ion-footer{
+    background-color: #fff !important;
+  }
+  
+  .imagen-portada{
+    
+    display: flex;
+    justify-content: center;
+    margin: 2em 0em;
+    padding: 0;
+
+    
+  }
+  .texto-portada{    
+    padding: 0em 1em;
+    margin: 0 auto;
+    display: flex;    
+    flex-direction: column;
+    text-align: center;
+    p{
+      text-align: justify;
+    }
+    
+    
   }
 }
 

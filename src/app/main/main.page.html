@@ -1,40 +1,46 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title> logo </ion-title>
-  </ion-toolbar>
+  <div>
+
+  <ion-row>
+    <ion-img src="assets/img/icono-portada.png" alt="icono-portada"></ion-img>
+  </ion-row>
+  
 </ion-header>
 <!-- content -->
-<ion-content class="ion-padding">
+<ion-content [fullscreen]="true" class="ion-text-center contenido-main content">
   <ion-grid>
     <!-- fila imagen-->
-    <ion-row class="ion-justify-content-center">
-      <ion-col size="12">
-        imagen
-      </ion-col>
+    <ion-row class="ion-justify-content-center imagen-portada">
+      <ion-img src="assets/img/img-portada.png" alt="img-portada"></ion-img>
     </ion-row>
     <!-- fila texto-->
     <ion-row class="ion-justify-content-center">
-      <ion-col size="auto">
-        <div class="titulo">
-          <h1>Gastronomía saludable en tu mesa.</h1>
-        </div>
-        <div class="texto">
-          <p>Somos profesionales Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, accusantium exercitationem voluptas doloribus voluptate explicabo.</p>
-        </div>
-      </ion-col>
-    </ion-row>
-    <ion-row class="ion-justify-content-center">
-      <div class="botones-main">
-        <ion-col size="6">
-          <ion-button>VER MENU</ion-button>
-        </ion-col>
-        <ion-col size="6">
-          <ion-button>HACER PEDIDO</ion-button>
+      <div class="texto-portada">
+        <ion-col size="12">
+          <div class="titulo">
+            <h1>Gastronomía saludable en tu mesa.</h1>
+          </div>
+          <div class="texto">
+            <p>Somos profesionales Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, accusantium
+              exercitationem voluptas doloribus voluptate explicabo.</p>
+          </div>
         </ion-col>
       </div>
-      
     </ion-row>
-  </ion-grid>  
+    <ion-row class="ion-justify-content-around">
+      <div class="botones-main">
+        <ion-col size="6">
+          <ion-button shape="round" class="btn-portada">VER MENU</ion-button>
+        </ion-col>
+        <ion-col size="6">
+          <ion-button shape="round" class="btn-portada">HACER PEDIDO</ion-button>
+        </ion-col>
+      </div>
+
+    </ion-row>
+  </ion-grid>
+
+
 </ion-content>
 <!-- footer -->
 <ion-footer>
