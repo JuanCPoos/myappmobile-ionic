@@ -27,7 +27,7 @@
 
 $color-text-link: rgb(20, 87, 187);
 $color-backs: rgb(51, 49, 49);
-$arrow-btn-yellow: rgb(219, 191, 29);  
+$arrow-btn-yellow: rgb(219, 191, 29);
 
 * {
   margin: 0;
@@ -39,20 +39,24 @@ body {
   background-color: $color-backs;
   margin: 0 auto;
 }
+ion-content,
+ion-header,
+ion-footer {
+  background-color: $color-backs;
+}
 section {
   width: 100%;
   display: flex;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
-  padding: .3em;
+  padding: 0.3em;
   .content {
     max-width: 1200px;
     padding: 1em;
     text-align: justify;
   }
 }
-
 
 h1,
 h2,
@@ -75,8 +79,8 @@ li {
     }
   }
 }
-#logo{
-    margin-top: 2em;
+#logo {
+  margin-top: 2em;
 }
 #textosUp {
   h1 {
@@ -85,32 +89,46 @@ li {
     margin: 0;
     font-size: 35px;
     width: auto;
-    
   }
   p {
     width: 185px;
-    margin-top: 1em;
+
     color: #fff;
     text-align: center;
     font-size: 12px;
   }
 }
-
-.menu-individual {
-  width: 290px;
-  //background-color: rgb(177, 81, 81);
-  color: #fff;  
-  //border-radius: 15px;
-  border-bottom: 1px solid #fff ;
-  margin: 1em 0em;
-  display: flex;
-  align-items: center;
-  p {
-    font-size: 17px;
-    margin: 0;
-    padding: 0.4em 0em;
+#productos {
+  margin: 0px;
+  padding: 0px;
+  .menu-individual {
+    width: 290px;
+    //background-color: rgb(177, 81, 81);
+    color: #fff;
+    //border-radius: 15px;
+    border-bottom: 1px solid #fff;
+    margin: 1em 0em;
+    display: flex;
+    align-items: center;
+    p {
+      font-size: 17px;
+      margin: 0;
+      padding: 0.4em 0em;
+    }
   }
 }
+
+.ion-padding{
+  height: 100vh;
+  .botones-main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1em 0em;
+  }
+}
+
+
 .ripple-parent {
   display: flex;
   align-items: center;
