@@ -49,6 +49,13 @@ ion-footer{
   }
   
 }
+#header-portada{
+  display: flex;
+  margin-top: 2em;
+  //padding-top: 1em ;
+  justify-content: center;
+}
+
 section {
   width: 100%;
   display: flex;
@@ -68,7 +75,7 @@ h2,
 h3,
 h4 {
   text-align: center;
-  padding: 0.5em 0em;
+  //padding: 0.5em 0em;
 }
 
 li {
@@ -87,11 +94,11 @@ li {
 #logo {
   margin-top: 2em;
 }
-#textosUp {
+#textosUp {  
   h1 {
     color: #fff;
     padding: 0em;
-    margin: 0;
+    margin: 0em;
     font-size: 35px;
     width: auto;
   }
@@ -130,6 +137,7 @@ li {
   align-items: center;
   justify-content: center;
   background-color: $color-backs;
+
   .botones-main{
     display: flex;
     justify-content: space-around;
@@ -137,6 +145,7 @@ li {
     margin: 1em 0em;
     .btn-portada{
       color: $color-backs;
+      padding: 3px 0px;
       width: 150px;
     }    
   }
@@ -152,11 +161,10 @@ li {
     background-color: #fff !important;
   }
   
-  .imagen-portada{
-    
+  .imagen-portada{    
     display: flex;
     justify-content: center;
-    margin: 2em 0em;
+    margin: 1em 0em;
     padding: 0;
 
     
@@ -167,6 +175,9 @@ li {
     display: flex;    
     flex-direction: column;
     text-align: center;
+    h1{
+      margin-top: .7em;
+    }
     p{
       text-align: justify;
     }
@@ -200,6 +211,13 @@ li {
   color: #501ace;
 }
 
-footer {
+ion-footer {
   background-color: #fff;
+  padding: .7em 1em;
+  display: flex;
+  justify-content: center;
+  
+  ion-button{
+    padding: 0em 1em;
+  }
 }

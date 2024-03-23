@@ -1,13 +1,19 @@
-<ion-header>
-  <div>
-
-  <ion-row>
-    <ion-img src="assets/img/icono-portada.png" alt="icono-portada"></ion-img>
-  </ion-row>
-  
-</ion-header>
+<!-- <ion-header>
+  <div id="header-portada">
+    <ion-row>
+      <ion-img src="assets/img/icono-portada.png" alt="icono-portada"></ion-img>
+    </ion-row>
+  </div>
+   
+</ion-header> -->
 <!-- content -->
+
 <ion-content [fullscreen]="true" class="ion-text-center contenido-main content">
+  <div id="header-portada">
+    <ion-row>
+      <ion-img src="assets/img/icono-portada.png" alt="icono-portada"></ion-img>
+    </ion-row>
+  </div>
   <ion-grid>
     <!-- fila imagen-->
     <ion-row class="ion-justify-content-center imagen-portada">
@@ -21,8 +27,7 @@
             <h1>Gastronomía saludable en tu mesa.</h1>
           </div>
           <div class="texto">
-            <p>Somos profesionales Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, accusantium
-              exercitationem voluptas doloribus voluptate explicabo.</p>
+            <p>Somos profesionales Lorem, ipsum dolor sit amet consectetur adipisicing elitelit. Molestias, accusantium exercitationem voluptas doloribus voluptate explicabo voluptate explicabo.</p>
           </div>
         </ion-col>
       </div>
@@ -44,7 +49,14 @@
 </ion-content>
 <!-- footer -->
 <ion-footer>
-  <ion-toolbar>
-    <ion-title> Footer </ion-title>
-  </ion-toolbar>
+  <div class="content nav-footer">
+    <ion-row>
+      <ion-col>
+        <ion-button>1</ion-button>
+        <ion-button>2</ion-button>
+        <ion-button>3</ion-button>
+      </ion-col>
+    </ion-row>
+    
+  </div>
 </ion-footer>
