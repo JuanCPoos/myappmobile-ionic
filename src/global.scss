@@ -39,16 +39,9 @@ body {
   background-color: --ion-color-backs;
   margin: 0 auto;
 }
-ion-content,
-ion-header{  
-  --background: $--ion-color-backs;
-}
-ion-footer{
-  --ion-toolbar{
-    --background: #fff;
-  }
-  
-}
+
+
+
 #header-portada{
   display: flex;
   margin-top: 2em;
@@ -95,6 +88,10 @@ li {
   margin-top: 2em;
 }
 #textosUp {  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
   h1 {
     color: #fff;
     padding: 0em;
