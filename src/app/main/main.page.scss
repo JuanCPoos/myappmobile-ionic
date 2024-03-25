@@ -1,0 +1,51 @@
+.contenido-main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: --ion-color-backs;
+  
+    .botones-main {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 1em 0em;
+      .btn-portada {
+        color: --ion-color-backs;
+        padding: 3px 0px;
+        width: 150px;
+      }
+    }
+  
+    ion-button {
+      margin: 0.7em 0.5em;
+      font-weight: 700;
+      //--background: var(--ion-color-back-btn);
+      //--background-activated: red;
+     
+    }
+  
+    .ion-footer {
+      background-color: #fff !important;
+    }
+  
+    .imagen-portada {
+      display: flex;
+      justify-content: center;
+      margin: 1em 0em;
+      padding: 0;
+    }
+    .texto-portada {
+      padding: 0em 1em;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      h1 {
+        margin-top: 0.7em;
+      }
+      p {
+        text-align: justify;
+      }
+    }
+  }

@@ -22,7 +22,11 @@ export const routes: Routes = [
     loadComponent: () => import('./portada/portada.page').then( m => m.PortadaPage)
   },
   {
+    path: 'menu',
+    loadComponent: () => import('./menu/menu.page').then( m => m.MenuPage)
+  },
+  /* {
     path: 'registro',
     loadComponent: () => import('./registro/registro.page').then( m => m.RegistroPage)
-  }
+  } */
 ];

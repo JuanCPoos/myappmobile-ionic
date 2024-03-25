@@ -8,7 +8,7 @@
 </ion-header> -->
 <!-- content -->
 
-<ion-content [fullscreen]="true" class="ion-text-center contenido-main content">
+<ion-content [fullscreen]="true" class="ion-text-center contenido-main content" color="myColor">
   <div id="header-portada">
     <ion-row>
       <ion-img src="assets/img/icono-portada.png" alt="icono-portada"></ion-img>
@@ -35,10 +35,10 @@
     <ion-row class="ion-justify-content-around">
       <div class="botones-main">
         <ion-col size="6">
-          <ion-button shape="round" class="btn-portada">VER MENU</ion-button>
+          <ion-button shape="round" class="myColor">VER MENU</ion-button>
         </ion-col>
         <ion-col size="6">
-          <ion-button shape="round" class="btn-portada">HACER PEDIDO</ion-button>
+          <ion-button [routerLink] = "['/product-list']" shape="round" class="btn-portada">HACER PEDIDO</ion-button>
         </ion-col>
       </div> 
     </ion-row>

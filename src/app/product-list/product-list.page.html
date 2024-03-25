@@ -10,7 +10,7 @@
 <ion-content [fullscreen]="true">
   <body>
     <section id="logo">
-      <img src="" alt="logo a cuatro fuegos">
+      <img src="assets/img/icono-portada.png" alt="logo a cuatro fuegos">
     </section>
     <!-- seccion titulo Menú y textos -->
     <section id="textosUp">
@@ -97,11 +97,8 @@
             </ion-row>
           </ion-grid>
         </div>
-        <ion-button id="open-toast" size="small" fill="outline" expand="block" shape="round" [routerLink]="['/main']"
-          color="danger">
-          <ion-icon name="cube-outline" name="start"></ion-icon>
-          Reservar
-        </ion-button>
+        <ion-button class="btn-guardar-menu" id="open-toast" size="small" shape="round" [routerLink]="['/main']"
+          color="dark">GUARDAR</ion-button>
       </div>
     </section>
     <!-- dispara sección una vez guardado el pedido (JS)-->
@@ -111,7 +108,5 @@
   </body>
 </ion-content>
 <ion-footer>
-  <ion-toolbar>
-    <ion-title> Footer </ion-title>
-  </ion-toolbar>
+  
 </ion-footer>
